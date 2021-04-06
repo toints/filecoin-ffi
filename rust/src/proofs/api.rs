@@ -1816,7 +1816,7 @@ pub mod tests {
     }
 
     #[test]
-    fn test_proof_types() -> Result<()> {
+    fn test_proof_types() {
         let seal_types = vec![
             fil_RegisteredSealProof::StackedDrg2KiBV1,
             fil_RegisteredSealProof::StackedDrg8MiBV1,
@@ -1903,8 +1903,6 @@ pub mod tests {
                 fil_destroy_string_response(r);
             }
         }
-
-        Ok(())
     }
 
     #[test]
