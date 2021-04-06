@@ -153,8 +153,6 @@ build_from_source() {
     gpu_flags=""
     if [ "${FFI_USE_GPU}" == "1" ]; then
         gpu_flags=",gpu"
-    elif [ "${FFI_USE_GPU2}" == "1" ]; then
-        gpu_flags=",gpu2"
     fi
 
     # Add feature specific rust flags as needed here.

@@ -54,7 +54,6 @@ pairing = ["filecoin-proofs-api/pairing", "bellperson/pairing"]
 blst = ["filecoin-proofs-api/blst", "bellperson/blst"]
 blst-portable = ["bls-signatures/blst-portable", "blstrs/portable"]
 gpu = ["filecoin-proofs-api/gpu", "bellperson/gpu"]
-gpu2 = ["filecoin-proofs-api/gpu2", "bellperson/gpu"]
 
 [patch.crates-io]
 paired = { git = "https://github.com/filecoin-project/paired", branch = "feat-compression" }
