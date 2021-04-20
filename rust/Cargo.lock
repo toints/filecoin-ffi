@@ -101,9 +101,9 @@ checksum = "cdb031dd78e28731d87d56cc8ffef4a8f36ca26c38fe2de700543e627f8a464a"
 
 [[package]]
 name = "backtrace"
-version = "0.3.56"
+version = "0.3.57"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9d117600f438b1707d4e4ae15d3595657288f8235a0eb593e80ecc98ab34e1bc"
+checksum = "78ed203b9ba68b242c62b3fb7480f589dd49829be1edb3fe8fc8b4ffda2dcb8d"
 dependencies = [
  "addr2line",
  "cfg-if 1.0.0",
@@ -122,14 +122,14 @@ checksum = "904dfeac50f3cdaba28fc6f57fdcddb75f49ed61346676a78c4ffe55877802fd"
 [[package]]
 name = "bellperson"
 version = "0.13.0"
-source = "git+https://github.com/filecoin-project/bellman?branch=feat-ipp2#d007311d971de6d5f83485843861ce49f3d8da92"
+source = "git+https://github.com/filecoin-project/bellman?branch=feat-ipp2#854f254b116844056f9ba09585414cffb78db6ef"
 dependencies = [
  "bincode",
  "bit-vec",
  "blake2s_simd",
  "blstrs",
- "byteorder 1.3.4",
- "crossbeam-channel 0.5.0",
+ "byteorder 1.4.3",
+ "crossbeam-channel 0.5.1",
  "digest 0.9.0",
  "ff-cl-gen",
  "fff",
@@ -153,11 +153,10 @@ dependencies = [
 
 [[package]]
 name = "bincode"
-version = "1.3.2"
+version = "1.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d175dfa69e619905c4c3cdb7c3c203fa3bdd5d51184e3afdb2742c0280493772"
+checksum = "b1f45e9417d87227c7a56d22e471c6206462cba514c7590c09aff4cf6d1ddcad"
 dependencies = [
- "byteorder 1.3.4",
  "serde",
 ]
 
@@ -219,7 +218,7 @@ checksum = "c0940dc441f31689269e10ac70eb1002a3a1d3ad1390e030043662eb7fe4688b"
 dependencies = [
  "block-padding 0.1.5",
  "byte-tools",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "generic-array 0.12.4",
 ]
 
@@ -316,9 +315,9 @@ checksum = "0fc10e8cc6b2580fda3f36eb6dc5316657f812a3df879a44a66fc9f0fdbc4855"
 
 [[package]]
 name = "byteorder"
-version = "1.3.4"
+version = "1.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "08c48aae112d48ed9f069b33538ea9e3e90aa263cfa3d1c24309612b1f7472de"
+checksum = "14c189c53d098945499cdfa7ecc63567cf3886b3332b312a5b4585d8d3a6a610"
 
 [[package]]
 name = "cbindgen"
@@ -332,7 +331,7 @@ dependencies = [
  "quote 1.0.9",
  "serde",
  "serde_json",
- "syn 1.0.68",
+ "syn 1.0.69",
  "tempfile",
  "toml",
 ]
@@ -446,7 +445,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fd01a6eb3daaafa260f6fc94c3a6c36390abc2080e38e3e34ced87393fb77d80"
 dependencies = [
  "cfg-if 1.0.0",
- "crossbeam-channel 0.5.0",
+ "crossbeam-channel 0.5.1",
  "crossbeam-deque 0.8.0",
  "crossbeam-epoch 0.9.3",
  "crossbeam-queue 0.3.1",
@@ -465,9 +464,9 @@ dependencies = [
 
 [[package]]
 name = "crossbeam-channel"
-version = "0.5.0"
+version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dca26ee1f8d361640700bde38b2c37d8c22b3ce2d360e1fc1c74ea4b0aa7d775"
+checksum = "06ed27e177f16d65f0f0c22a213e17c696ace5dd64b14258b52f9417ccb52db4"
 dependencies = [
  "cfg-if 1.0.0",
  "crossbeam-utils 0.8.3",
@@ -583,7 +582,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5e98e2ad1a782e33928b96fc3948e7c355e5af34ba4de7670fe8bac2a3b2006d"
 dependencies = [
  "quote 1.0.9",
- "syn 1.0.68",
+ "syn 1.0.69",
 ]
 
 [[package]]
@@ -696,7 +695,7 @@ checksum = "aa4da3c766cd7a0db8242e326e9e4e081edd567072893ed320008189715366a4"
 dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
- "syn 1.0.68",
+ "syn 1.0.69",
  "synstructure",
 ]
 
@@ -731,7 +730,7 @@ name = "fff"
 version = "0.2.3"
 source = "git+https://github.com/filecoin-project/ff?branch=ser-de#231b29f9df9b13f510566e1d4b69e6b0e1bfc34e"
 dependencies = [
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "cc",
  "fff_derive",
  "lazy_static",
@@ -749,7 +748,7 @@ dependencies = [
  "num-traits 0.2.14",
  "proc-macro2 1.0.26",
  "quote 1.0.9",
- "syn 1.0.68",
+ "syn 1.0.69",
 ]
 
 [[package]]
@@ -810,7 +809,7 @@ dependencies = [
  "bellperson",
  "bls-signatures",
  "blstrs",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "cbindgen",
  "drop_struct_macro_derive 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "fff",
@@ -831,7 +830,7 @@ dependencies = [
 [[package]]
 name = "filecoin-hashers"
 version = "1.1.0"
-source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#ab958b57d2196f35e24ee62ab79d750f605cbf13"
+source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#107a172e598bdb0dc478dc9cd586ba2ca4b59cdc"
 dependencies = [
  "anyhow",
  "bellperson",
@@ -849,7 +848,7 @@ dependencies = [
 [[package]]
 name = "filecoin-proofs"
 version = "6.1.0"
-source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#ab958b57d2196f35e24ee62ab79d750f605cbf13"
+source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#107a172e598bdb0dc478dc9cd586ba2ca4b59cdc"
 dependencies = [
  "anyhow",
  "bellperson",
@@ -858,7 +857,7 @@ dependencies = [
  "blake2b_simd",
  "blake2s_simd",
  "byte-slice-cast",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "fff",
  "fil_logger",
  "filecoin-hashers",
@@ -914,12 +913,12 @@ dependencies = [
 [[package]]
 name = "fr32"
 version = "0.2.0"
-source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#ab958b57d2196f35e24ee62ab79d750f605cbf13"
+source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#107a172e598bdb0dc478dc9cd586ba2ca4b59cdc"
 dependencies = [
  "anyhow",
  "bellperson",
  "byte-slice-cast",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "fff",
  "thiserror",
 ]
@@ -1214,7 +1213,7 @@ checksum = "6981728ae8254e8417f6c2f84ac83acdc31a567c9dc1344e30e5bbe916024e15"
 dependencies = [
  "bellperson",
  "blake2s_simd",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "ff-cl-gen",
  "fff",
  "generic-array 0.14.4",
@@ -1391,7 +1390,7 @@ version = "0.21.0"
 source = "git+https://github.com/filecoin-project/paired?branch=feat-compression#f2f02233988eb1d58cc5bb967041f76eb6acd671"
 dependencies = [
  "blake2b_simd",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "digest 0.9.0",
  "fff",
  "groupy",
@@ -1633,7 +1632,7 @@ version = "1.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9ab346ac5921dc62ffa9f89b7a773907511cdfa5490c572ae9be1be33e8afa4a"
 dependencies = [
- "crossbeam-channel 0.5.0",
+ "crossbeam-channel 0.5.1",
  "crossbeam-deque 0.8.0",
  "crossbeam-utils 0.8.3",
  "lazy_static",
@@ -1657,9 +1656,9 @@ checksum = "41cc0f7e4d5d4544e8861606a285bb08d3e70712ccc7d2b84d7c0ccfaf4b05ce"
 
 [[package]]
 name = "redox_syscall"
-version = "0.2.5"
+version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "94341e4e44e24f6b591b59e47a8a027df12e008d73fd5672dbea9cc22f4507d9"
+checksum = "8270314b5ccceb518e7e578952f0b72b88222d02e8f77f5ecf7abbb673539041"
 dependencies = [
  "bitflags 1.2.1",
 ]
@@ -1814,7 +1813,7 @@ checksum = "b093b7a2bb58203b5da3056c05b4ec1fed827dcfdb37347a8841695263b3d06d"
 dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
- "syn 1.0.68",
+ "syn 1.0.69",
 ]
 
 [[package]]
@@ -1867,10 +1866,10 @@ dependencies = [
 [[package]]
 name = "sha2raw"
 version = "2.1.0"
-source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#ab958b57d2196f35e24ee62ab79d750f605cbf13"
+source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#107a172e598bdb0dc478dc9cd586ba2ca4b59cdc"
 dependencies = [
  "block-buffer 0.9.0",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "cpuid-bool",
  "digest 0.9.0",
  "fake-simd",
@@ -1888,7 +1887,7 @@ checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
 [[package]]
 name = "storage-proofs-core"
 version = "6.1.0"
-source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#ab958b57d2196f35e24ee62ab79d750f605cbf13"
+source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#107a172e598bdb0dc478dc9cd586ba2ca4b59cdc"
 dependencies = [
  "aes",
  "anyhow",
@@ -1896,7 +1895,7 @@ dependencies = [
  "blake2b_simd",
  "blake2s_simd",
  "block-modes",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "config",
  "fff",
  "filecoin-hashers",
@@ -1926,13 +1925,13 @@ dependencies = [
 [[package]]
 name = "storage-proofs-porep"
 version = "6.1.0"
-source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#ab958b57d2196f35e24ee62ab79d750f605cbf13"
+source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#107a172e598bdb0dc478dc9cd586ba2ca4b59cdc"
 dependencies = [
  "anyhow",
  "bellperson",
  "bincode",
  "byte-slice-cast",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "crossbeam 0.8.0",
  "digest 0.9.0",
  "fdlimit",
@@ -1964,13 +1963,13 @@ dependencies = [
 [[package]]
 name = "storage-proofs-post"
 version = "6.1.0"
-source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#ab958b57d2196f35e24ee62ab79d750f605cbf13"
+source = "git+https://github.com/filecoin-project/rust-fil-proofs?branch=feat-aggregation#107a172e598bdb0dc478dc9cd586ba2ca4b59cdc"
 dependencies = [
  "anyhow",
  "bellperson",
  "blake2b_simd",
  "blake2s_simd",
- "byteorder 1.3.4",
+ "byteorder 1.4.3",
  "crossbeam 0.8.0",
  "fff",
  "filecoin-hashers",
@@ -2013,9 +2012,9 @@ dependencies = [
 
 [[package]]
 name = "syn"
-version = "1.0.68"
+version = "1.0.69"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3ce15dd3ed8aa2f8eeac4716d6ef5ab58b6b9256db41d7e1a0224c2788e8fd87"
+checksum = "48fe99c6bd8b1cc636890bcc071842de909d902c81ac7dab53ba33c421ab8ffb"
 dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
@@ -2030,7 +2029,7 @@ checksum = "b834f2d66f734cb897113e34aaff2f1ab4719ca946f9a7358dba8f8064148701"
 dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
- "syn 1.0.68",
+ "syn 1.0.69",
  "unicode-xid 0.2.1",
 ]
 
@@ -2053,7 +2052,7 @@ dependencies = [
  "cfg-if 1.0.0",
  "libc",
  "rand 0.8.3",
- "redox_syscall 0.2.5",
+ "redox_syscall 0.2.6",
  "remove_dir_all",
  "winapi 0.3.9",
 ]
@@ -2084,7 +2083,7 @@ checksum = "7765189610d8241a44529806d6fd1f2e0a08734313a35d5b3a556f92b381f3c0"
 dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
- "syn 1.0.68",
+ "syn 1.0.69",
 ]
 
 [[package]]
@@ -2211,21 +2210,21 @@ checksum = "9fc79f4a1e39857fc00c3f662cbf2651c771f00e9c15fe2abc341806bd46bd71"
 
 [[package]]
 name = "zeroize"
-version = "1.2.0"
+version = "1.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "81a974bcdd357f0dca4d41677db03436324d45a4c9ed2d0b873a5a360ce41c36"
+checksum = "4756f7db3f7b5574938c3eb1c117038b8e07f95ee6718c0efad4ac21508f1efd"
 dependencies = [
  "zeroize_derive",
 ]
 
 [[package]]
 name = "zeroize_derive"
-version = "1.0.1"
+version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c3f369ddb18862aba61aa49bf31e74d29f0f162dec753063200e1dc084345d16"
+checksum = "a2c1e130bebaeab2f23886bf9acbaca14b092408c452543c857f66399cd6dab1"
 dependencies = [
  "proc-macro2 1.0.26",
  "quote 1.0.9",
- "syn 1.0.68",
+ "syn 1.0.69",
  "synstructure",
 ]
