@@ -39,7 +39,7 @@ rust-gpu-tools = "0.2.0"
 package = "filecoin-proofs-api"
 default-features = false
 git = "https://github.com/toints/rust-filecoin-proofs-api"
-branch = "master"
+rev = "3c2839a60bc23f092957f7c65cff26e19120e32c"
 
 [build-dependencies]
 cbindgen = "= 0.14.0"
